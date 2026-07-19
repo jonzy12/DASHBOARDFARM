@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # קריאת הכתובת מהסביבה, ואם היא לא קיימת - נשתמש בלוקאל הוסט כגיבוי
-MONGO_DETAILS = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_DETAILS = os.getenv("MONGO_URI")
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
 
 db = client.farm_database 
