@@ -4,7 +4,7 @@ WORKDIR /app
 
 # העתקת קבצי הניהול של npm והתקנת חבילות
 COPY ./front-end/package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # העתקת שאר קוד האתר
 COPY ./front-end .

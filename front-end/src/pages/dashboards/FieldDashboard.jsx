@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Circle } from 'react-leaflet';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-import { cropStressLegend } from '/home/jonzy/python/תיקייה לפרוייקט גמר/dashfarmboardtrue/front-end/src/cropStressLegend';
+import { cropStressLegend } from '../../cropStressLegend';
 
 export default function FieldDashboard() {
   const [fields, setFields] = useState([]);

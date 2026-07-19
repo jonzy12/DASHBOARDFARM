@@ -7,3 +7,9 @@ joblib
 motor
 pydantic
 python-dotenv
+httpx
+pyjwt
+python-jose[cryptography]
+bcrypt
+email-validator
+tensorflow
